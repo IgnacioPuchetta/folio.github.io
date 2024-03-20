@@ -1,0 +1,255 @@
+
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+.button-container div {
+    margin: 25px;
+    text-align: center;
+}
+.button-container button {
+    max-width: 250px; 
+    
+}
+
+.button-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.button-container2 div {
+    margin: 25px;
+    text-align: center;
+}
+.button-container2 button {
+    max-width: 250px; 
+}
+
+#button-one {
+    background-image: url(img/tetris.PNG);
+    background-size: cover; 
+    width: 250px; 
+    height: 150px; 
+    border: none;
+    cursor: pointer;
+    color: white; 
+    font-size: 16px; 
+    text-align: center; 
+    line-height: 50px;
+    
+}
+
+#button-two {
+    background-image: url(img/dooblejump.PNG);
+    background-size: cover; 
+    width: 250px; 
+    height: 150px; 
+    border: none;
+    cursor: pointer;
+    color: white; 
+    font-size: 16px; 
+    text-align: center; 
+    line-height: 50px;
+}
+
+#button-three {
+    background-image: url(img/invasion.PNG);
+    background-size: cover; 
+    width: 250px; 
+    height: 150px; 
+    border: none;
+    cursor: pointer;
+    color: white; 
+    font-size: 16px; 
+    text-align: center; 
+    line-height: 50px;
+   
+}
+
+#button-four {
+    background-image: url(img/2048.PNG);
+    background-size: cover; 
+    width: 250px; 
+    height: 150px; 
+    border: none;
+    cursor: pointer;
+    color: white; 
+    font-size: 16px; 
+    text-align: center; 
+    line-height: 50px;
+    
+}
+
+#button-five {
+    background-image: url(img/buscaminas.PNG);
+    background-size: cover; 
+    width: 250px; 
+    height: 150px; 
+    border: none;
+    cursor: pointer;
+    color: white; 
+    font-size: 16px; 
+    text-align: center; 
+    line-height: 50px;
+}
+
+#button-six {
+    background-image: url(img/snake.PNG);
+    background-size: cover; 
+    width: 250px; 
+    height: 150px; 
+    border: none;
+    cursor: pointer;
+    color: white; 
+    font-size: 16px; 
+    text-align: center; 
+    line-height: 50px;
+   
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    min-height: 70px;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+    
+    }
+
+    #text {
+        margin-top: 140px; 
+        text-align: center;
+    }
+    
+    .logo {
+        display: flex;
+    }
+    
+    .logo img{
+        height: 80px;
+        margin-right: 10px;
+    }
+
+    body{
+        font-family: sans-serif;
+        margin: 0;
+        position: relative;
+        padding-bottom: 500px;
+        min-height: 100vh;
+    }
+
+    a{
+        text-decoration: none;
+        color:black;
+    }
+
+    nav a {
+        font-weight: 600;
+        padding-right: 25px;
+        
+    }
+
+    nav a:hover{
+        color: white;
+    }
+
+    @media (max-width:700px) {
+        header{
+            flex-direction: column;
+        }
+        nav{
+            padding: 10px 0px;
+        }
+    }
+
+    
+
+    .pie-pagina {
+        width: 100%;
+        background-color: aqua;
+        grid-template-rows: auto 1fr auto;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:50px;
+        padding: 45px 0px;
+    }
+
+    .pie-pagina .grupo-1 .box figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+
+    .pie-pagina .grupo-1 .box figure img {
+        width: 100px;
+    }
+
+    .box h2 {
+        color: rgb(0, 0, 0);
+        margin-bottom: 25px;
+        font-size: 20px;
+        text-align: center;
+       
+    }
+
+   
+
+    .red-social {
+        text-align: center;
+        line-height: 80px;    
+    }
+    .red-social a + a {
+        margin-left: 30px;
+    }
+    .red-social a img {
+        margin-top: 20px;
+        position: relative; /* Permite posicionar la imagen de manera relativa */
+        top: 5px;
+        width: 20px; 
+        height: 20px; 
+        
+    }
+
+    .pie-pagina .grupo-2 {
+        background-color: rgb(2, 192, 192);
+        padding: 15px 10px;
+        text-align: center;
+        color: white;
+        
+    }
+
+    .pie-pagina .grupo-2 small {
+        font-size: 15px;
+        
+
+    }
+    @media screen and (max-width:800px) {
+        .pie-pagina .grupo-1 {
+            width: 90%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap:30px;
+            padding: 35px 0px;
+            
+        }
+    }
